@@ -71,19 +71,11 @@ function DrawGameBoard() {
                 if (e.which === 1) {
                     applyFiller(this);
                 }
-<<<<<<< HEAD
             }
         }, function (e) {
             if (!active) {
                 $(this).removeClass('hovered');  
             }
-=======
-            }
-        }, function (e) {
-            if (!active) {
-                $(this).removeClass('hovered');  
-            }
->>>>>>> d23cd27251c6dfaa575aa3f252dcafff28517b24
         }).on('mousedown', function() {
             if ($(this).hasClass('alive')) {
                 filler = alive;
@@ -185,7 +177,7 @@ function IterateGameBoard() {
             gameBoard[x].currentGen = dead;
         }
     }
-    if (    iteration === 0) {
+    if (iteration === 0) {
         for (x = 0; x < cellCount; x++) {
             gameBoard[x].initialGen = gameBoard[x].currentGen;
         }
